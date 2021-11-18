@@ -16,7 +16,7 @@ import java.util.Scanner;
             do {
                 System.out.println("Itt tartasz: " + wordFound);
                 System.out.println("Ennyi tipped van: " + chances);
-                System.out.println("Mi a következő tipp? ");
+                System.out.print("Mi a következő tipp? ");
                 String guess = scanner.nextLine();
                 if (wordToFind.contains(guess)) {
                     System.out.println("jó betű");
@@ -27,9 +27,9 @@ import java.util.Scanner;
             } while (chances>0 && !wordToFind.equals(wordFound));
 
             if (wordToFind.equals(wordFound)) {
-                System.out.println("ügyes");
+                System.out.println("Ügyes vagy!");
             } else {
-                System.out.println("sajnos vesztettél");
+                System.out.println("Sajnos vesztettél :(");
             }
         }
 
